@@ -1,0 +1,79 @@
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  
+  
+  background-color: var(--container-bg); 
+  color: var(--text-primary);
+  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  
+ 
+  background-color: var(--task-item-bg);
+}
+
+.task-stats {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--task-item-bg); 
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  font-size: 0.9rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.task-stats strong {
+  color: var(--link-color); 
+  font-size: 1.1rem;
+}
+
+
+.add-button {
+  display: block;
+  text-align: center;
+  background-color: var(--link-color);
+  color: white !important; 
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid var(--link-color);
+  background: transparent;
+  color: var(--text-primary);
+  border-radius: 4px;
+}
+
+.filters button.active {
+  background-color: var(--link-color);
+  color: white;
+}
+
+.add-button:hover {
+  opacity: 0.8;
+}
