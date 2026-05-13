@@ -50,10 +50,10 @@ const TaskItem = ({
               textDecoration:
                 task.completed
                   ? "line-through"
-                  : "none"
+                  : "none",
                 opacity: task.completed ? 0.5 : 1,
                 transition: "all 0.3s ease",
-                display: "block";
+                display: "block"
             }}
           >
             {task.text}
